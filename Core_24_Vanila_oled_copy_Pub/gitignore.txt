@@ -1,0 +1,37 @@
+# ESP8266 MQTT Project .gitignore
+
+# CRITICAL: Never commit credentials!
+credentials.h
+
+# Arduino/PlatformIO build artifacts
+.pio/
+.vscode/
+.clang_complete
+.gcc-flags.json
+*.elf
+*.hex
+*.bin
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.env
+venv/
+env/
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+*.sublime-*
+*.code-workspace
+
+# Logs
+*.log
