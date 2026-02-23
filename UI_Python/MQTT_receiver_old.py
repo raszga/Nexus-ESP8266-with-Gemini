@@ -3,11 +3,11 @@ import ssl
 import os
 import random
 import sys
-BROKER = "4ae0ff064ac54e2d9a978133ce70718f.s1.eu.hivemq.cloud"
+BROKER = "4ae0ff06433ce70718f.s1.eu.hivemq.cloud"
 PORT = 8883
 TOPIC = "Test"
-USERNAME = "CR22081"
-PASSWORD = "Timisoara1900"
+USERNAME = "CR1"
+PASSWORD = "Tira1900"
 
 # -------------------------------------------------------------------
 # Callbacks updated for API v2 signatures
@@ -54,3 +54,4 @@ client.connect(BROKER, PORT, keepalive=60)
 
 # Blocking loop for receiver
 client.loop_forever()
+
