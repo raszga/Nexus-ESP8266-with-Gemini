@@ -42,11 +42,11 @@ o 871864      - Fan Controller
 o 00000000dc7a9d7f:30.4        - RPI
 o BFEBFBFF000A06529982    - LPTP"""
 
-BROKER = "4ae0ff064ac54e2d9a978133ce70718f.s1.eu.hivemq.cloud"
+BROKER = "4ae0ff064\.s1.eu.hivemq.cloud"
 PORT = 8883
 TOPIC = "Test"
-USERNAME = "CR22081"
-PASSWORD = "Timisoara1900"
+USERNAME = "CR2"
+PASSWORD = "Tra1900"
 
 # =============================================================================
 # MQTT Functions
@@ -200,5 +200,6 @@ except KeyboardInterrupt:
 
 client.loop_stop()
 client.disconnect()
+
 
 
