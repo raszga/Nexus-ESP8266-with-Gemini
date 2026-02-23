@@ -13,13 +13,13 @@ A modular ESP8266 IoT framework featuring an adaptable I2C sensor engine and sec
 A modular, object-oriented IoT framework for the ESP8266 (NodeMCU/Wemos D1 Mini). This system features an "Adaptable Sensor" architecture that dynamically manages I2C, Analog, and Digital sensors, combined with a robust MQTT command parser and a Python-based desktop controller.
 
 ## 🤖 Multi-AI Collaboration
-This project represents a sophisticated Human-AI partnership:
+This project represents an -AI cooperation:
 * **Phase 1 (Copilot):** Initial prototyping and early logic exploration.
 * **Phase 2 (Gemini):** Engineered the core "Adaptable" architecture, Actuator Managers, and the modular C++ structure.
 * **Phase 3 (Claude Sonnet 4.5):** Implemented secure credential management (`config.ini` / `credentials.h` logic) and the curses-based Python `MQTT_sender_.py`.
 
 ## 🛠 Features
-* **Elastic Sensor Management:** Automatically detects hardware on the I2C bus and "shifts" active sensors to the front of the polling loop, gracefully handling missing hardware.
+* **Adaptabe Sensor Management:** Automatically detects hardware on the I2C bus and "shifts" active sensors to the front of the polling loop, gracefully handling missing hardware.
 * **Unified Actuator Control:** Supports PWM (Fans/LEDs) and Digital outputs with soft-start (Kickstart) and safety-reverse logic.
 * **OLED Visuals:** Dynamic UI with real-time progress bars, QR code generation for device IDs, and system status inverted-flashes.
 * **Command Parsing:** Advanced string parsing (via `aux_`) allows complex command chains like `*F500*D100` to be executed in one MQTT message.
