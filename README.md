@@ -41,3 +41,16 @@ This project represents an -AI cooperation:
 
 ## 📜 License
 This project is open-source. Please maintain the AI-collaboration headers in the source files.
+
+## ⚙️ Configuration & Security
+
+### 🔐 Private Credentials
+This project **does not** include WiFi or MQTT passwords. You must provide your own:
+1. **For ESP8266:** Create a file named `credentials.h` in the root folder (use `credentials.h.example` as a template).
+2. **For Python Controller:** Create a file named `config.ini` in the root folder (use the template provided in the documentation).
+
+### ☁️ MQTT Broker (HiveMQ)
+The `MqttHandler` module is specifically tailored for **[HiveMQ Cloud](https://console.hivemq.cloud/)**. 
+* **Port:** 8883 (Secure TLS).
+* **Setup:** The code uses `setInsecure()` to bypass certificate validation while maintaining encrypted transport, which is optimized for HiveMQ's cluster architecture on the ESP8266.
+* **Topic Structure:** Default messages follow the pattern `{ComputerName}:\n{Payload}`.
